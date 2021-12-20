@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+.body {
+    display: block;
+}
+
+.categories_box{
+    margin: 30px 0 25px 10px;
+}
+
+.categories_box:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.categories_box li {
+    float: left;
+    padding-right: 5px;
+    font-size: 12px;
+    color: #666;
+    line-height: 17px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.product_main_area {
+    height: 100%;
+}
+
+.product_main {
+    margin: 0 auto;
+}
+
+.detail_box:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.detail_box .detail_box_top {
+    z-index: 500px;
+}
+
+.detail_box .detail_box_top:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.detail_box_top .detail_box_area {
+    display: block;
+    margin-top: 150px;
+    height: 580px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.detail_box .photo_area {
+    float: left;
+    margin-right: 50px;
+}
+
+.photo_area {
+    position: relative;
+}
+
+.detail_box .photo_area .main_img {
+    width: 450px;
+    height: 450px;
+    background: url(../resources/exphoto_main.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img_viewport {
+    float: left;
+    width: 460px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.img_viewport_prev {
+    float: left;
+    cursor: pointer;
+}
+
+.img_viewport_prev:after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    box-shadow: 0 0 0 #d3d3d3;
+    transform: rotate(222deg);
+}
+
+.photo_area .img_viewport_container {
+    position: relative;
+    height: 65px;
+    overflow: hidden;
+    width: 420px;
+    margin: 0 auto;
+}
+
+.photo_area .img_item {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+
+.photo_area .img_item .img_item_other:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 500;
+    background: rgba(0, 0, 0, .25);
+}
+
+.product_box .img_item .thumbnail_img {
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+
+.img_viewport_next:after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 440px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    box-shadow: 0 0 0 #d3d3d3;
+    transform: rotate(42deg);
+}
+
+.detail_box .item_info {
+    width: 468px;
+    min-height: 262px;
+    float: left;
+    background-color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.detail_box .item_info:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.item_name_price_info {
+    display: block;
+    margin: 0px;
+}
+
+.item_info .item_name {
+    display: block;
+    font-size: 20px;
+    color: black;
+    float: left;
+    top: 38px;
+    width: 94%;
+}
+
+.item_info .item_price .item_name_price_info {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.item_price_description .description_sales_table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.item_info .item_name {
+    display: block;
+    font-size: 20px;
+    color: black;
+    float: left;
+    top: 38px;
+    width: 94px;
+}
+.item_info .item_price {
+    height: 35px;
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+    float: left;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.item_info_count li {
+    float: left;
+    padding-right: 5px;
+    font-size: 12px;
+    color: #666;
+    line-height: 17px;
+}
+
+.section {
+    display: block;
+}
+
+.header {
+    border: 1px solid blue;
+}
+
+img {
+    vertical-align: top;
+}
+
+div {
+    display: block;
+}
+
+article {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+.item_info {
+    border: 1px solid cadetblue;
+}
+
+.member_comment_text .cmt_in_box textarea {
+    width: 90%;
+    resize: none;
+    height: 64px;
+    float: left;
+}
+
+.member_comment_text .cmt_btn_box .comment_send_btn {
+    text-align: center;
+    border: 1px solid #a4835f;
+    background-color: #a4835f;
+    width: 150px;
+    height: 50px;
+    float: right;
+    cursor: pointer;
+    border-radius: 5px;
+}
