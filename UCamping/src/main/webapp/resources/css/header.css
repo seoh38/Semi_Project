@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 * {
   font-family: "Noto Sans KR", sans-serif;
   list-style: none;
@@ -23,6 +21,16 @@ header {
 #line {
   width: 100%;
   border-bottom: 1px solid #a4835f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#line2 {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #a4835f;
+  /* top: ; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,8 +111,13 @@ input::placeholder {
   /* background-color: chocolate; */
 }
 
+/* -----------로그아웃 상태 : 로그인, 회원가입 등 작은 버튼들 1 ------------*/
 .sml-menu {
+  /* 로그인 후의 버튼이 보고싶다면 밑의 주석처리한 display:none으로 변경하기 */
+  /* 그리고 아래의 sml-menu2도 display: flex;로 바꾸어야 함 */
+  /* display: none; */
   display: flex;
+
   justify-content: center;
   line-height: 118px;
   width: 400px;
@@ -159,6 +172,68 @@ input::placeholder {
   width: 20px;
   height: 18px;
 }
+
+/* -----------로그인 상태 : 로그인 후 보이는 작은 버튼 2 ------------*/
+.sml-menu2 {
+  /* 로그아웃 시의 버튼이 보고싶다면 밑의 주석처리한 display:none로 변경하기 */
+  /* +위의 sml-menu도 display: flex;로 바꾸어야 함 */
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  line-height: 118px;
+  width: 400px;
+  flex-grow: 1;
+  /* background: green; */
+  flex-basis: 33%;
+}
+
+.sml-menu2 > li {
+  font-size: 14px;
+  margin-left: 18px;
+  font-weight: bold;
+}
+
+/* 작은 메뉴 색상 변경(건드리면 골치아픔) */
+.sml-text2:hover > span {
+  color: #a4835f;
+}
+
+.sml-text2:hover > span .material-icons-outlined.chgcolor {
+  color: #a4835f;
+}
+
+.sml-text2:hover > span .material-icons.chgcolor {
+  color: #a4835f;
+}
+
+#bar {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#sml-img1 {
+  display: inline-block;
+  vertical-align: -6px;
+  width: 24px;
+  height: 24px;
+}
+
+#sml-img2 {
+  display: inline-block;
+  vertical-align: -7px;
+  padding-right: 7px;
+  width: 15px;
+  height: 15px;
+}
+
+#sml-img3 {
+  display: inline-block;
+  vertical-align: -6px;
+  padding-right: 4px;
+  width: 20px;
+  height: 18px;
+}
+
 /* ------------------------ nav -------------------------- */
 /* 메뉴 전체 공간 */
 .container {
@@ -188,14 +263,6 @@ input::placeholder {
 
   background-color: white;
 }
-
-/* .nav a,
-.nav a:link,
-.nav a:visited,
-.nav a:hover,
-.nav a:focus {
-  color: white;
-} */
 
 /* 풀 드롭다운 (배경 색 검정-글자색 하양)버젼 */
 .fulldrop a:link,
@@ -262,21 +329,6 @@ input::placeholder {
   color: #95b28e;
 }
 
-/* .nav ul li:hover:after {
-  color: white;
-} */
-
-/* .nav > li:hover .coldrop {
-  opacity: 1;
-  visibility: visible;
-  margin-top: 0px;
-} */
-
-/* .nav .coldrop .column {
-  width: 130px;
-  margin: 0 9px;
-} */
-
 /* 풀 드롭 중앙 수평정렬 */
 .nav .column {
   width: 14.1%;
@@ -319,18 +371,3 @@ input::placeholder {
   display: block;
   padding: 0 0 18px 0;
 }
-
-/* -----------------반응형 연습------------------ */
-
-@media screen and (max-width: 800px) {
-  /* .search { */
-  /* display: none; */
-  /* visibility: hidden; */
-  /* } */
-}
-
-@media screen and (max-width: 1000px) {
-  /* .sml-menu { */
-  /* display: none; */
-}
-

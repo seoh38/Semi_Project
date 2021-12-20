@@ -14,30 +14,25 @@
 <script src="./lib/jquery-3.6.0.js"></script>
 <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
 
 <body>
 	<div class="body">
-
         <div class="main-slide">
-          <div>
-            <img class="main-img" src="${ path }/resources/images/main/main2.jpg">
-          </div>
-          <div>
-            <img class="main-img" src="${ path }/resources/images/main/main14.jpg" alt="">
-          </div>
-          <div>
-            <img class="main-img" src="${ path }/resources/images/main/main7.jpg" alt="">
+          <div class="slick">
+            <div class="item1" style="background-color: rgb(230, 230, 230);">
+              <div class="main-img" style="background-image: url(${ path }/resources/images/main/main2-2.jpg);">
+              </div>
+            </div>
+            <div class="item1" style="background-color: rgb(220, 220, 220);">
+              <div class="main-img" style="background-image: url(${ path }/resources/images/main/main14-1.jpg);"></div>
+            </div>
+            <div class="item1" style="background-color: rgb(210, 210, 210);">
+              <div class="main-img" style="background-image: url(${ path }/resources/images/main/main7-1.jpg);"></div>
+            </div>
           </div>
         </div>
-
-        <!-- <div class="slide-btn">
-          <img class="main-left" src="./image/icon/left.png" alt="">
-          <img class="main-right" src="./image/icon/right.png" alt="">
-        </div> -->
-        <!-- <div class="small-title"> -->
-          <!-- <a href="www.naver.com"> </a> -->
-          <!-- <a href="#">?얘 진짜 뭐지 왜 갑자기 안되는데??</a> -->
-        <!-- </div> -->
 
         <div class="item-list">
             <div class="small-title">
@@ -86,13 +81,13 @@
       <div class="main-slide2">
         <div class="slick">
           <div class="item" style="background-color: red;">
-            <div class="bg" style="background-image: url(${ path }/resources/images/main/main6.jpg);"></div>
+            <div class="bg" style="background-image: url(${ path }/resources/images/main/main15-1.jpg);"></div>
           </div>
           <div class="item" style="background-color: blue;">
-            <div class="bg" style="background-image: url(${ path }/resources/images/main/main10.jpg);"></div>
+            <div class="bg" style="background-image: url(${ path }/resources/images/main/main10-1.jpg);"></div>
           </div>
           <div class="item" style="background-color: green;">
-            <div class="bg" style="background-image: url(${ path }/resources/images/main/main11.jpg);"></div>
+            <div class="bg" style="background-image: url(${ path }/resources/images/main/main12.jpg);"></div>
           </div>
       </div>
       <div class="slide-btn">
@@ -149,77 +144,6 @@
 
 </body>
 
-<script>
-      $(document).ready(function(){
-        $('.main-slide').slick({
-          arrows: false,
-          dots: true,
-          autoplay: true,
-          autoplaySpeed: 10000,
-          // infinite: false
-        });
-
-        $('.img-slide').slick({
-          slidesToShow: 4, 
-          slidesToScroll: 1,
-          prevArrow : $(".sml-left"),
-          nextArrow : $(".sml-right"),
-          autoplay: true,
-          autoplaySpeed: 5000,
-          // arrows: false,
-          // prevArrow : "<button type='button' class='slick-prev'></button>",
-          // nextArrow : "<button type='button' class='slick-next'></button>",
-        });
-
-        $('.img-slide2').slick({
-          slidesToShow: 4, 
-          slidesToScroll: 1,
-          prevArrow : $(".sml-left2"),
-          nextArrow : $(".sml-right2"),
-          autoplay: true,
-          autoplaySpeed: 5000,
-        });
-
-        $('.item-img').hover(
-            (event)=>{
-                if(event.type === 'mouseenter'){
-                    $(event.target).fadeTo(100, 0.5);
-                }else if(event.type === 'mouseleave'){
-                    $(event.target).fadeTo(100, 1);
-                }
-            }
-          );
-
-          $('.main-slide2>.slick').slick({
-          // arrows: false,
-          // dots: false,
-          slidesToShow: 1,
-          pauseOnHover:false,
-          autoplay: true,
-          autoplaySpeed: 10000,
-          prevArrow : $(".main-left2"),
-          nextArrow : $(".main-right2"),
-        });
-
-        $('.img-slide3').slick({
-          slidesToShow: 4, 
-          slidesToScroll: 1,
-          prevArrow : $(".sml-left3"),
-          nextArrow : $(".sml-right3"),
-          autoplay: true,
-          autoplaySpeed: 5000,
-        });
-
-        $('.img-slide4').slick({
-          slidesToShow: 4, 
-          slidesToScroll: 1,
-          prevArrow : $(".sml-left4"),
-          nextArrow : $(".sml-right4"),
-          autoplay: true,
-          autoplaySpeed: 5000,
-        });
-
-      });
-    </script>
+    <script src="${ path }/resources/js/main.js"></script>
 
 <jsp:include page="/views/common/footer.jsp" />

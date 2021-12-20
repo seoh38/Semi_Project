@@ -16,7 +16,8 @@
 <script src="${ path }/resources/js/jquery-3.6.0.js"></script>
 <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-<title>Insert title here</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+<title>UCamping - Your First Secondhand Camping shop</title>
 
 </head>
 <body>
@@ -25,7 +26,7 @@
             <div class=first>
                 <div class="main-menu">
                     <div class="logo">
-                        <p><a href="#">UCamping</a></p>
+                        <p><a href="${ path }">UCamping</a></p>
                     </div>
                     <div class="search">
                         <form>
@@ -33,13 +34,22 @@
                             <a href="#"><img class="glass" src="${ path }/resources/images/icon/magnifier.png"></a>
                         </form>
                     </div>
+                    <!-- 로그인 전 버튼들 -->
                     <ul class="sml-menu">
-                        <li><a href="#" class="sml-text"><span><i id="sml-img1" class="material-icons-outlined chgcolor">shopping_cart</i> 찜한상품</span></a></li>
-                        <li id="bar">|</li>
-                        <li><a href="#" class="sml-text"><span><i id="sml-img2" class="material-icons-outlined chgcolor">login</i>&nbsp&nbsp로그인</span></a></li>
-                        <li id="bar">|</li>
-                        <li><a href="#" class="sml-text"><span><i id="sml-img3" class="material-icons chgcolor">person_add_alt_1</i>&nbsp회원가입</span></a></li>
-                    </ul>
+                      <li id="a12"><a href="#" class="sml-text"><span><i id="sml-img1" class="material-icons-outlined chgcolor">shopping_cart</i> 찜한상품</span></a></li>
+                      <li id="bar">|</li>
+                      <li><a href="${ path }/login" class="sml-text"><span><i id="sml-img2" class="material-icons-outlined chgcolor">login</i>&nbsp&nbsp로그인</span></a></li>
+                      <li id="bar">|</li>
+                      <li><a href="#" class="sml-text"><span><i id="sml-img3" class="material-icons chgcolor">person_add_alt_1</i>&nbsp회원가입</span></a></li>
+                  </ul>
+                    <!-- 로그인 후 버튼들 -->
+                    <ul class="sml-menu2">
+                      <li><a href="#" class="sml-text2"><span><i id="sml-img1" class="material-icons-outlined chgcolor">shopping_cart</i> 찜한상품</span></a></li>
+                      <li id="bar">|</li>
+                      <li><a href="#" class="sml-text2"><span><i id="sml-img2" class="material-icons-outlined chgcolor">forum</i>&nbsp&nbsp채팅</span></a></li>
+                      <li id="bar">|</li>
+                      <li><a href="#" class="sml-text2"><span><i id="sml-img3" class="material-icons chgcolor">person_pin</i>user11님</span></a></li>
+                  </ul>
                 </div>
             </div>
         </div>
@@ -251,84 +261,84 @@
                       </ul> 
                     </div>
                   </div>
+                <div id="line2">
         </nav>
     </header>
 
 </body>
 
 <script>
-      $(document).ready(function(){
-        $('.main-slide').slick({
-          arrows: false,
-          dots: true,
-          autoplay: true,
-          autoplaySpeed: 10000,
-          // infinite: false
-        });
+  $(document).ready(function(){
+    $('.main-slide>.slick').slick({
+      arrows: false,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 10500,
+      // infinite: false
+    });
 
-        $('.img-slide').slick({
-          slidesToShow: 4, 
-          slidesToScroll: 1,
-          prevArrow : $(".sml-left"),
-          nextArrow : $(".sml-right"),
-          autoplay: true,
-          autoplaySpeed: 5000,
-          // arrows: false,
-          // prevArrow : "<button type='button' class='slick-prev'></button>",
-          // nextArrow : "<button type='button' class='slick-next'></button>",
-        });
+    $('.img-slide').slick({
+      slidesToShow: 4, 
+      slidesToScroll: 1,
+      prevArrow : $(".sml-left"),
+      nextArrow : $(".sml-right"),
+      autoplay: true,
+      autoplaySpeed: 5000,
+      // arrows: false,
+      // prevArrow : "<button type='button' class='slick-prev'></button>",
+      // nextArrow : "<button type='button' class='slick-next'></button>",
+    });
 
-        $('.img-slide2').slick({
-          slidesToShow: 4, 
-          slidesToScroll: 1,
-          prevArrow : $(".sml-left2"),
-          nextArrow : $(".sml-right2"),
-          autoplay: true,
-          autoplaySpeed: 5000,
-        });
+    $('.img-slide2').slick({
+      slidesToShow: 4, 
+      slidesToScroll: 1,
+      prevArrow : $(".sml-left2"),
+      nextArrow : $(".sml-right2"),
+      autoplay: true,
+      autoplaySpeed: 5000,
+    });
 
-        $('.item-img').hover(
-            (event)=>{
-                if(event.type === 'mouseenter'){
-                    $(event.target).fadeTo(100, 0.5);
-                }else if(event.type === 'mouseleave'){
-                    $(event.target).fadeTo(100, 1);
-                }
+    $('.item-img').hover(
+        (event)=>{
+            if(event.type === 'mouseenter'){
+                $(event.target).fadeTo(100, 0.5);
+            }else if(event.type === 'mouseleave'){
+                $(event.target).fadeTo(100, 1);
             }
-          );
+        }
+      );
 
-          $('.main-slide2>.slick').slick({
-          // arrows: false,
-          // dots: false,
-          slidesToShow: 1,
-          pauseOnHover:false,
-          autoplay: true,
-          autoplaySpeed: 10000,
-          prevArrow : $(".main-left2"),
-          nextArrow : $(".main-right2"),
-        });
+      $('.main-slide2>.slick').slick({
+      // arrows: false,
+      // dots: false,
+      slidesToShow: 1,
+      pauseOnHover:false,
+      autoplay: true,
+      autoplaySpeed: 10000,
+      prevArrow : $(".main-left2"),
+      nextArrow : $(".main-right2"),
+    });
 
-        $('.img-slide3').slick({
-          slidesToShow: 4, 
-          slidesToScroll: 1,
-          prevArrow : $(".sml-left3"),
-          nextArrow : $(".sml-right3"),
-          autoplay: true,
-          autoplaySpeed: 5000,
-        });
+    $('.img-slide3').slick({
+      slidesToShow: 4, 
+      slidesToScroll: 1,
+      prevArrow : $(".sml-left3"),
+      nextArrow : $(".sml-right3"),
+      autoplay: true,
+      autoplaySpeed: 5000,
+    });
 
-        $('.img-slide4').slick({
-          slidesToShow: 4, 
-          slidesToScroll: 1,
-          prevArrow : $(".sml-left4"),
-          nextArrow : $(".sml-right4"),
-          autoplay: true,
-          autoplaySpeed: 5000,
-        });
+    $('.img-slide4').slick({
+      slidesToShow: 4, 
+      slidesToScroll: 1,
+      prevArrow : $(".sml-left4"),
+      nextArrow : $(".sml-right4"),
+      autoplay: true,
+      autoplaySpeed: 5000,
+    });
 
 
-      });
-    </script>
-    
-    <script src="main.js"></script>
+  });
+</script>
+    <script src="${ path }/resources/css/js/main.js"></script>
 </html>

@@ -16,10 +16,10 @@
     <div class="inner">
 
       <ul class="menu">
-        <li><a href="javascript:void(0)">개인정보처리방침</a></li>
-        <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
-        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
-        <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+        <li><a href="${ path }/terms">개인정보처리방침</a></li>
+        <li><a href="${ path }/terms">영상정보처리기기 운영관리 방침</a></li>
+        <li><a href="${ path }/terms">홈페이지 이용약관</a></li>
+        <li><a href="${ path }/terms">위치정보 이용약관</a></li>
 
       </ul>
 
