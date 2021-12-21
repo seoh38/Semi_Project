@@ -5,22 +5,29 @@
 <c:set var="path" value="${ pageContext.request.contextPath }"/>     
 
 <jsp:include page="/views/common/header.jsp" />
-<!DOCTYPE html>
-<html>
-<head>    
-<meta charset="UTF-8">
+
 <title>Insert title here</title>
 <link rel="stylesheet" href="${ path }/resources/css/mypage.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
+
+
 <main id="wrap">
         <nav>
-            <div>
-                <img id="home_img" src="${ path }/resources/images/home.png">
-                <div>홈</div>
+            <div class="product_box">
+            <div class="categories_box">
+                <ul>
+                    <li>
+                        <a href="">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            > 
+                            마이페이지
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <aside>
@@ -61,7 +68,6 @@
         </section>
     </main>
 
-</body>
-</html>
+
 
 <jsp:include page="/views/common/footer.jsp" />

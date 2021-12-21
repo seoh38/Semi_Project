@@ -6,10 +6,8 @@
 
 <jsp:include page="/views/common/header.jsp" />   
     
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
+
+
 <title>Insert title here</title>
 <link rel="stylesheet" href="${ path }/resources/css/costomerCenter.css">
 <link rel="icon" href="./favicon.png">
@@ -20,9 +18,7 @@
   <!--Google Material Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-</head>
-<body>
-	<main>
+<main>
     <div class="inner">
       <aside>
         <div id="customer-center">고객센터</div>
@@ -59,9 +55,7 @@
         </div>
       </section>
     </div>
-  </main>
+ </main>
   
-</body>
-</html>
 
 <jsp:include page="/views/common/footer.jsp" />
