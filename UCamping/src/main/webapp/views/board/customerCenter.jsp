@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="${ path }/resources/css/costomerCenter.css">
+<link rel="stylesheet" href="${ path }/resources/css/customerCenter.css">
 <link rel="icon" href="./favicon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +25,7 @@
 	<main>
     <div class="inner">
       <aside>
+      
         <div id="customer-center">고객센터</div>
         <hr style="border: 1.5px solid black; background-color: black; margin-bottom: 15px;">
         
@@ -34,6 +35,7 @@
           <a href="javascript:void(0)">이용 안내<hr></a>
           <a href="javascript:void(0)">1:1 게시판 문의<hr></a>
         </div>
+        
       </aside>
     
       <section>
@@ -61,7 +63,6 @@
     </div>
   </main>
   
-</body>
-</html>
+
 
 <jsp:include page="/views/common/footer.jsp" />

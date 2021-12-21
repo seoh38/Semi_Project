@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>유캠핑 회원가입</title>
  <link rel="icon" href="./favicon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,16 +21,17 @@
 
   <link rel="stylesheet" href="${ path }/resources/css/join.css">
 </head>
-<body>
+
 <div id="container">
 		<div id="join">
+		<form name="memberEnrollFrm" action="${ pageContext.request.contextPath }/member/enroll" method="post">
 			<div class="form-group">
 				<label for="userId">아이디</label>
-				<input type="text" id="userId" placeholder="아이디"/>
+				<input type="text" name="userId" id="userId" placeholder="아이디"/>
 			</div>
 			<div class="form-group">
 				<label for="userPw">비밀번호</label>
-				<input type="password" id="userPw" placeholder="패스워드"/>
+				<input type="password" name="userPwd" id="userPw" placeholder="패스워드"/>
 			</div>
 			<div class="form-group">
 				<label for="userPw">비밀번호 재확인</label>
@@ -38,33 +39,32 @@
 			</div>
 			<div class="form-group">
 				<label for="userName">이름</label>
-				<input type="text" id="userName" placeholder="이름"/>
+				<input type="text" name="userName" id="userName" placeholder="이름"/>
 			</div>
-      <div class="form-group">
-				<label for="userName">생년월일</label>
-				<input type="text" id="bornYear" placeholder="년도"/>
-        <input type="text" id="bornMonth" placeholder="월"/>
-        <input type="text" id="bornDate" placeholder="일"/>
+      		<div class="form-group">
+				<label for="userBirth">생년월일</label>
+				<input type="text" name="bornBirth" id="bornYear" placeholder="년도"/>
+        		<input type="text" name="bornBirth" id="bornMonth" placeholder="월"/>
+        		<input type="text" name="bornBirth" id="bornDate" placeholder="일"/>
 			</div>
 			<div class="form-group">
-				<label>성별</label>
-				<label class="radio">
-					<input type="radio" name="userGender" value="남">남
-				</label>
-				<label class="radio">
-					<input type="radio"  name="userGender" value="여">여
-				</label>
-			</div>
-      <div class="form-group">
+          		<label for="userNickname">닉네임</label>
+          		<input type="text" name="userNickname" id="userNickname" placeholder="닉네임"/>
+        	</div>
+        	<div class="form-group">
+          		<label for="userEmail">이메일</label>
+          		<input type="email" name="userEmail" id="userEmail" placeholder="이메일"/>
+        	</div>	
+      		<div class="form-group">
 				<label for="userPhone">휴대전화</label>
-				<input type="text" id="userPhone" placeholder="휴대전화"/>
+				<input type="text" name="userPhone" id="userPhone" placeholder="휴대전화"/>
 			</div>
       
       <button type="submit">가입하기</button>
+      </form>
 		</div>
 	</div>
 	
-</body>
-</html>
+
 
 <jsp:include page="/views/common/footer.jsp" />

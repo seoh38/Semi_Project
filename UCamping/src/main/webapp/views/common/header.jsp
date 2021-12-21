@@ -35,21 +35,26 @@
                         </form>
                     </div>
                     <!-- 로그인 전 버튼들 -->
+                    <c:if test="${ empty loginMember }">
                     <ul class="sml-menu">
                       <li id="a12"><a href="#" class="sml-text"><span><i id="sml-img1" class="material-icons-outlined chgcolor">shopping_cart</i> 찜한상품</span></a></li>
                       <li id="bar">|</li>
-                      <li><a href="${ path }/login" class="sml-text"><span><i id="sml-img2" class="material-icons-outlined chgcolor">login</i>&nbsp&nbsp로그인</span></a></li>
+                      <li><a href="${ path }/member/login" class="sml-text"><span><i id="sml-img2" class="material-icons-outlined chgcolor">login</i>&nbsp&nbsp로그인</span></a></li>
                       <li id="bar">|</li>
-                      <li><a href="#" class="sml-text"><span><i id="sml-img3" class="material-icons chgcolor">person_add_alt_1</i>&nbsp회원가입</span></a></li>
-                  </ul>
+                      <li><a href="${ path }/member/enroll" class="sml-text"><span><i id="sml-img3" class="material-icons chgcolor">person_add_alt_1</i>&nbsp회원가입</span></a></li>
+                      
+                  	</ul>
+                  	</c:if>
                     <!-- 로그인 후 버튼들 -->
-                    <ul class="sml-menu2">
+                    <c:if test="${ !empty loginMember }">
+                    <ul class="sml-menu">
                       <li><a href="#" class="sml-text2"><span><i id="sml-img1" class="material-icons-outlined chgcolor">shopping_cart</i> 찜한상품</span></a></li>
                       <li id="bar">|</li>
                       <li><a href="#" class="sml-text2"><span><i id="sml-img2" class="material-icons-outlined chgcolor">forum</i>&nbsp&nbsp채팅</span></a></li>
                       <li id="bar">|</li>
-                      <li><a href="#" class="sml-text2"><span><i id="sml-img3" class="material-icons chgcolor">person_pin</i>user11님</span></a></li>
-                  </ul>
+                      <li><a href="#" class="sml-text2"><span><i id="sml-img3" class="material-icons chgcolor">person_pin</i>${ loginMember.nickname } 님</span></a></li>
+                  	</ul>
+                  	</c:if>
                 </div>
             </div>
         </div>
@@ -209,7 +214,7 @@
                           <!----- Full Drop Down Contents  Ends  Here---->  
             
                         <!----- Full Drop Down Name ----> 
-                        <li class="dropdown"><a href="#">고객센터</a>     
+                        <li class="dropdown"><a href="${ pageContext.request.contextPath }/board/list">고객센터</a>     
                           <!----- Full Drop Down Name Ends Here ---->     
                             
                           <!----- Full Drop Down Contents  Starts Here---->     

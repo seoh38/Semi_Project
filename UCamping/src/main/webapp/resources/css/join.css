@@ -46,6 +46,7 @@ a {
 	
 }
 #join .form-group input[type=text],
+#join .form-group input[type=email],
 #join .form-group input[type=password]
 {
 	/*가로 사이즈 가변  */
@@ -54,7 +55,10 @@ a {
 	font-size: 18px;
 	/* border: 3px solid #999; */
 	border: 2px solid gray;
+	
 }
+
+
 #join #bornYear{
   width: 144.8px;
 	font-weight: normal;

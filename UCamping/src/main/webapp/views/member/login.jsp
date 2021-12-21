@@ -37,10 +37,10 @@
                 
                 <div class="login-content">
                     <p>로그인</p>
-                      <form id="login-form" action="#" method="post">
+                      <form id="login-form" action="${ path }/member/login" method="post">
                         <div id="login-form-input">
-                          <input type="text" name="id" id="id" required="required" placeholder="아이디">
-                          <input type="password" name="password" id="password" required="required" placeholder="비밀번호">
+                          <input type="text" name="userId" id="userId" required="required" placeholder="아이디">
+                          <input type="password" name="userPwd" id="userPwd" required="required" placeholder="비밀번호">
                         </div>
                           <input type="submit" value="로그인" class="submit">
                       </form>
