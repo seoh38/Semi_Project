@@ -16,9 +16,7 @@ body {
   margin: 0 auto;
   
 } */
-img {
-  display: block;
-}
+
 a {
   text-decoration: none;
 }
@@ -58,7 +56,7 @@ main .inner aside #customer-menu a {
 }
 
 main .inner aside #customer-menu hr {
-  border: 1px solid black;
+  border: 1px solid gray;
   background-color: black;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -80,11 +78,13 @@ main .inner section #customer-content {
 
 section #question {
   /* margin-top: 10px; */
-  font-size: 20px;
+  font-size: 15px;
   border: 2px solid #A4835F;
+  border-radius: 3px;
   width: 500px;
   height: 40px;
   margin-bottom: 20px;
+  padding-left: 10px;
 }
 section #search {
   font-size: 20px;
@@ -92,6 +92,7 @@ section #search {
   width: 70px;
   height: 48px;
   background-color: #A4835F;
+  border-radius: 3px;
   
 }
 
@@ -102,11 +103,13 @@ section #sub-question button {
   width: 160px;
   height: 48px;
   margin-bottom: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 section #detail-question {
   color: black;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 section #detail-question a {
@@ -114,7 +117,7 @@ section #detail-question a {
 }
 
 section #detail-question hr {
-  border: 1px solid black;
+  border: 1px solid gray;
   background-color: black;
   margin-top: 15px;
   margin-bottom: 15px;

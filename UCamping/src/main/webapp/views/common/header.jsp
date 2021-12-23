@@ -52,7 +52,12 @@
                       <li id="bar">|</li>
                       <li><a href="#" class="sml-text2"><span><i id="sml-img2" class="material-icons-outlined chgcolor">forum</i>&nbsp&nbsp채팅</span></a></li>
                       <li id="bar">|</li>
-                      <li><a href="#" class="sml-text2"><span><i id="sml-img3" class="material-icons chgcolor">person_pin</i>${ loginMember.nickname } 님</span></a></li>
+                      <li><a href="#" class="sml-text2"><span><i id="sml-img3" class="material-icons chgcolor">person_pin</i>${ loginMember.nickname } 님</span></a>
+                        <li id="hamburger"><a href="#" class="sml-text2"><span><i id="sml-img4" class="material-icons-outlined chgcolor">menu</i></span></a>
+                          <ul class="ssml-menu">
+                            <li><a href="#" class="sml-text2"><span>로그아웃</span></a>
+                          </ul>
+                      </li>
                   	</ul>
                   	</c:if>
                 </div>
@@ -97,8 +102,7 @@
                               <ul>
                                 <li><a href="#">프로필 설정</a></li>
                                 <li><a href="#">계정 설정</a></li>
-                                <li><a href="#">장바구니</a></li>
-                                <li><a href="#">주문내역</a></li>
+                                <li><a href="#">찜한상품</a></li>
                               </ul>
                             </div>
                             
@@ -146,8 +150,7 @@
                             <ul>
                               <li><a href="#">프로필 설정</a></li>
                               <li><a href="#">계정 설정</a></li>
-                              <li><a href="#">장바구니</a></li>
-                              <li><a href="#">주문내역</a></li>
+                              <li><a href="#">찜한상품</a></li>
                             </ul>
                           </div>
                           
@@ -198,8 +201,7 @@
                             <ul>
                               <li><a href="#">프로필 설정</a></li>
                               <li><a href="#">계정 설정</a></li>
-                              <li><a href="#">장바구니</a></li>
-                              <li><a href="#">주문내역</a></li>
+                              <li><a href="#">찜한상품</a></li>
                             </ul>
                           </div>
                           
@@ -249,8 +251,7 @@
                               <ul>
                                 <li><a href="#">프로필 설정</a></li>
                                 <li><a href="#">계정 설정</a></li>
-                                <li><a href="#">장바구니</a></li>
-                                <li><a href="#">주문내역</a></li>
+                                <li><a href="#">찜한상품</a></li>
                               </ul>
                             </div>
                             

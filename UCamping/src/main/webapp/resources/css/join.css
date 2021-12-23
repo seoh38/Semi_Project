@@ -17,7 +17,7 @@ body {
   
 } */
 img {
-  display: block;
+ /* display: block; */
 }
 a {
   text-decoration: none;
@@ -51,11 +51,11 @@ a {
 {
 	/*가로 사이즈 가변  */
 	width:calc(100% - 16px);
-	padding: 5px;
-	font-size: 18px;
+	padding: 6px;
+	font-size: 17px;
 	/* border: 3px solid #999; */
-	border: 2px solid gray;
-	
+	border: 2px solid #A4835F;
+	border-radius: 10px;
 }
 
 
@@ -91,9 +91,11 @@ a {
 	padding: 10px;
 	background-color: #A4835F;
 	color: #fff;
-	border: 3px solid #64492d;
-  cursor: pointer;
+	border: 2px solid #64492d;
+   	border-radius: 10px;
+  	cursor: pointer;
 }
+
 
 
 /* #container {
